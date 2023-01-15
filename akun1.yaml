@@ -1,0 +1,14 @@
+proxies:
+  - name: KMSPSTORETROJANWEBSOCKET298
+    server: teams.live.com
+    port: 443
+    type: trojan
+    password: b876b1de-bdff-4477-aada-303a7d1556c9
+    skip-cert-verify: true
+    sni: sg-trojan-vvip-1.kmsp-ssh.my.id
+    network: ws
+    ws-opts:
+      path: /websocket
+      headers:
+        Host: sg-trojan-vvip-1.kmsp-ssh.my.id
+    udp: true
