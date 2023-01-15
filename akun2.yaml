@@ -1,0 +1,49 @@
+proxies:
+  - name: RealSSH ID
+    server: teams.live.com
+    port: 443
+    type: vmess
+    uuid: b18dabeb-829b-4cce-8e6b-442659379ff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id01-vmess.realssh.xyz
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id01-vmess.realssh.xyz
+    udp: true
+  - name: Jago ID
+    server: teams.live.com
+    port: 443
+    type: vmess
+    uuid: c01b64b3-e897-48af-b672-accdc3fc0338
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2-ray.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: id2-ray.ipservers.xyz
+    udp: true
+  - name: ID WhyVPN
+    server: teams.live.com
+    port: 443
+    type: vmess
+    uuid: a9d8c010-4a82-4172-b735-75212958420a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1.kitu.xyz
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: id1.kitu.xyz
+    udp: true
